@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Academic & Attendance Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Adamas Academic Companion</h1>
+    <p>A quick utility tool for semester tracking</p>
+  </header>
+
+  <main class="container">
+    <!-- Tool 1: Attendance Safe-Bunk Calculator -->
+    <section class="card">
+      <h2>1. Attendance Planner</h2>
+      <label for="attended">Classes Attended:</label>
+      <input type="number" id="attended" placeholder="e.g. 18" min="0">
+
+      <label for="total">Total Classes Held:</label>
+      <input type="number" id="total" placeholder="e.g. 24" min="1">
+
+      <button id="calc-attendance-btn">Check Status</button>
+      <div id="attendance-result" class="result-box"></div>
+    </section>
+
+    <!-- Tool 2: Quick SGPA Estimator -->
+    <section class="card">
+      <h2>2. SGPA Estimator</h2>
+      <p class="subtext">Enter marks (out of 100) and course credits:</p>
+
+      <div class="row">
+        <input type="number" id="mark1" placeholder="Subject 1 Marks">
+        <input type="number" id="cred1" placeholder="Credits (e.g. 4)">
+      </div>
+      <div class="row">
+        <input type="number" id="mark2" placeholder="Subject 2 Marks">
+        <input type="number" id="cred2" placeholder="Credits (e.g. 3)">
+      </div>
+      <div class="row">
+        <input type="number" id="mark3" placeholder="Subject 3 Marks">
+        <input type="number" id="cred3" placeholder="Credits (e.g. 3)">
+      </div>
+
+      <button id="calc-sgpa-btn">Compute SGPA</button>
+      <div id="sgpa-result" class="result-box"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
